@@ -1,4 +1,10 @@
 ﻿#nullable enable
+Microsoft.Maui.CalendarDatePickerExtensionsFake
+Microsoft.Maui.CalendarDatePickerExtensionsFake.CalendarDatePickerExtensionsFake() -> void
+Microsoft.Maui.CalendarDatePickerExtensionsFake.GetDayFormatTest(string! format) -> string!
+Microsoft.Maui.CalendarDatePickerExtensionsFake.GetMonthFormatTest(string! format) -> string!
+Microsoft.Maui.CalendarDatePickerExtensionsFake.GetYearFormatTest(string! format) -> string!
+Microsoft.Maui.CalendarDatePickerExtensionsFake.ToDateFormatTest(string! format) -> string!
 Microsoft.Maui.Handlers.ApplicationHandler.ApplicationHandler(Microsoft.Maui.IPropertyMapper? mapper) -> void
 Microsoft.Maui.Handlers.BorderHandler.BorderHandler(Microsoft.Maui.IPropertyMapper? mapper) -> void
 Microsoft.Maui.Handlers.BorderHandler.BorderHandler(Microsoft.Maui.IPropertyMapper? mapper, Microsoft.Maui.CommandMapper? commandMapper) -> void
