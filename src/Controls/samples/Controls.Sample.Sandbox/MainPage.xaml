@@ -4,4 +4,7 @@
     x:Class="Maui.Controls.Sample.MainPage"
     xmlns:local="clr-namespace:Maui.Controls.Sample">
 
+    <FlexLayout x:Name="flxlayout" MinimumWidthRequest="500" MinimumHeightRequest="500">
+    </FlexLayout>
+
 </ContentPage>

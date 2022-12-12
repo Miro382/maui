@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using Microsoft.Maui.Controls.Internals;
 using Microsoft.Maui.Graphics;
 using Microsoft.Maui.Layouts;
@@ -598,9 +599,21 @@ namespace Microsoft.Maui.Controls
 
 		void ClearLayout()
 		{
-			foreach (var child in Children)
-				RemoveFlexItem(child);
+			if (Children.Count < 500)
+			{
+				foreach (var child in Children)
+					RemoveFlexItem(child);
+			}
+			else
+			{
+
+				Parallel.ForEach(Children, child =>
+				{
+					RemoveFlexItem(child);
+				});
+			}
 			_root = null;
+			
 		}
 
 		void InitLayoutProperties(Flex.Item item)
